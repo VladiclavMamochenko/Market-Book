@@ -10,18 +10,15 @@
 
     <Grid Background="Wheat">
         <Grid.RowDefinitions>
-            <RowDefinition Height="4*"/>
-            <RowDefinition Height="4*"/>
-            <RowDefinition Height="4*"/>
-            <RowDefinition Height="4*"/>
-            <RowDefinition Height="4*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="50px"/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="4*"/>
-            <ColumnDefinition Width="4*"/>
-            <ColumnDefinition Width="4*"/>
-            <ColumnDefinition Width="4*"/>
-            <ColumnDefinition Width="4*"/>
-        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="DGridBook">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Название книги" Binding="{Binding Name}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Автор" Binding="{Binding AuthorBook}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Жанр" Binding="{Binding GenreBook}" Width="*"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Page>
