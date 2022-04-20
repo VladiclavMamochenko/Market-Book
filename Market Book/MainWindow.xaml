@@ -7,11 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="6*"/>
-        </Grid.ColumnDefinitions>
+        <Frame Name="MainFrame"></Frame>
 
     </Grid>
 </Window>

@@ -23,6 +23,7 @@ namespace Market_Book
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new Page1());
         }
     }
 }
