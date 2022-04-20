@@ -8,7 +8,25 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Menu">
 
-    <Grid>
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="1" Content="Книги" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="70" Width="140" IsDefault="True" FontSize="36" FontWeight="Bold" Background="#FF00F9FF" Click="Button_Click"/>
+        <Button Grid.Column="3" Content="Магазины" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="70" Width="140" Background="#FFCE00FF" FontSize="26" FontWeight="Bold" />
         
+
+
     </Grid>
 </Page>

@@ -24,5 +24,10 @@ namespace Market_Book.Pages
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Menu());
+        }
     }
 }
