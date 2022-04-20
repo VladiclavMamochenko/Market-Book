@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Market_Book.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,7 @@ namespace Market_Book
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new Page1());
+            MainFrame.Navigate(new Auth());
         }
     }
 }

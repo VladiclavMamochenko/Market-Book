@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Market_Book.Model;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +14,6 @@ namespace Market_Book
     /// </summary>
     public partial class App : Application
     {
+        public static User User { get; set; }
     }
 }

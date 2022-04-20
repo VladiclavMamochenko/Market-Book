@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Market_Book
+namespace Market_Book.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Page1.xaml
+    /// Логика взаимодействия для Menu.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class Menu : Page
     {
-        public Page1()
+        public Menu()
         {
             InitializeComponent();
-        }
-
-        private void LoginClick(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
