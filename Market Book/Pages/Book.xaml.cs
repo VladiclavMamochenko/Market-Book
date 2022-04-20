@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace Market_Book.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Menu.xaml
+    /// Логика взаимодействия для Book.xaml
     /// </summary>
-    public partial class Menu : Page
+    public partial class Book : Page
     {
-        public Menu()
+        public Book()
         {
             InitializeComponent();
-        }
-
-        private void BookClick (object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Book());
         }
     }
 }

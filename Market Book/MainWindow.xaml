@@ -8,11 +8,11 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="8*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="9*"/>
         </Grid.RowDefinitions>
         <Frame NavigationUIVisibility="Hidden" Name="MainFrame" Grid.Row="1"></Frame>
+        <Image HorizontalAlignment="Center" Height="80" VerticalAlignment="Center" Width="150" Source="/Resources/milyy-dom-logo.jpg"/>
 
     </Grid>
 </Window>
