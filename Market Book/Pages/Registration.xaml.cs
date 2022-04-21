@@ -37,7 +37,7 @@ namespace Market_Book.Pages
                 db.SaveChanges();
                 MessageBox.Show("Success");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
                 MessageBox.Show("Error");
