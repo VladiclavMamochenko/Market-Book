@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,8 @@ namespace Market_Book.Pages
     /// </summary>
     public partial class Book : Page
     {
+        private static readonly Model.DB _db = new Model.DB();
+        public ObservableCollection<Model.Book> Books { get; set; } = new ObservableCollection<Model.Book>(_db.Book.ToList());
         public Book()
         {
             InitializeComponent();

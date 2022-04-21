@@ -24,6 +24,8 @@ namespace Market_Book.Pages
         public Auth()
         {
             InitializeComponent();
+            Login.Text = "Ivan2003";
+            Password.Text = "123456";
         }
 
         private void LoginClick(object sender, RoutedEventArgs e)
@@ -40,6 +42,11 @@ namespace Market_Book.Pages
                 App.User = user;
                 NavigationService.Navigate(new Menu());
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Registration());  
         }
     }
 }
