@@ -15,5 +15,6 @@ namespace Market_Book
     public partial class App : Application
     {
         public static User User { get; set; }
+        public static Book Book { get; set; }
     }
 }

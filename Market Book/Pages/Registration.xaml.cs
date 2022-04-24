@@ -35,12 +35,12 @@ namespace Market_Book.Pages
                 var db = new DB();
                 db.User.Add(User);
                 db.SaveChanges();
-                MessageBox.Show("Success");
+                MessageBox.Show("Сохранено");
             }
             catch (Exception)
             {
 
-                MessageBox.Show("Error");
+                MessageBox.Show("Данные введены не правильно", "Ошибка");
             }
             
         }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,26 +16,20 @@ using System.Windows.Shapes;
 namespace Market_Book.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Book.xaml
+    /// Логика взаимодействия для New_book.xaml
     /// </summary>
-    public partial class Book : Page
+   
+    public partial class New_book : Page
     {
-        private static readonly Model.DB _db = new Model.DB();
-        public ObservableCollection<Model.Book> Books { get; set; } = new ObservableCollection<Model.Book>(_db.Book.ToList());
-        public Book()
+        public Book Book { get; set; } = new Book() { };
+        public New_book()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Menu());
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new New_book());
+            NavigationService.Navigate(new Book());
         }
     }
 }
