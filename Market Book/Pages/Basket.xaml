@@ -9,7 +9,8 @@
       Title="Basket">
 
     <Grid Background="LightGoldenrodYellow">
-        
+        <Button Content="В меню" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Height="50" Width="140" Click="Button_Click"/>
+
 
     </Grid>
 </Page>
