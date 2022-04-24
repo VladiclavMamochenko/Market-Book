@@ -23,7 +23,7 @@ namespace Market_Book.Pages
    
     public partial class New_book : Page
     {
-        public Book Book { get; set; } = new Book() { };
+        public Model.Book Book { get; set; } = new Book() { };
         public New_book()
         {
             InitializeComponent();
