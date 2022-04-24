@@ -11,7 +11,7 @@
     <Grid Background="Violet" DataContext="{Binding ElementName=MarketPage, Path=.}">
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="60"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <DataGrid ItemsSource="{Binding Markets}" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Visible">
             <DataGrid.Columns>
@@ -21,6 +21,6 @@
                 <DataGridTextColumn Header="Конец работы" Binding="{Binding EndTimeWork }" Width="*"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Вернуться" HorizontalAlignment="Right"  Grid.Row="1" VerticalAlignment="Center" Height="60" Width="150" Click="Button_Click"  />
+        <Button Content="Вернуться" HorizontalAlignment="Right"  Grid.Row="1" VerticalAlignment="Center" Height="50" Width="150" Click="Button_Click"  />
     </Grid>
 </Page>
