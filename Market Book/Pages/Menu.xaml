@@ -24,6 +24,6 @@
             <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
         <Button Grid.Column="1" Content="Книги" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="70" Width="140" IsDefault="True" FontSize="36" FontWeight="Bold" Background="Transparent" Click="BookClick" BorderBrush="Transparent" Foreground="#FF1CE031" FontFamily="Cascadia Code"/>
-        <Button Grid.Column="3" Content="Магазины" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="70" Width="140" Background="Transparent" FontSize="28" FontWeight="Bold" BorderBrush="Transparent" Foreground="#FFFF0404" FontFamily="Cascadia Code" />
+        <Button Grid.Column="3" Content="Магазины" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="70" Width="140" Background="Transparent" FontSize="28" FontWeight="Bold" BorderBrush="Transparent" Foreground="#FFFF0404" FontFamily="Cascadia Code" Click="Button_Click" />
     </Grid>
 </Page>

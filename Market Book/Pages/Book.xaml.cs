@@ -38,5 +38,10 @@ namespace Market_Book.Pages
         {
             NavigationService.Navigate(new New_book());
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Basket());
+        }
     }
 }

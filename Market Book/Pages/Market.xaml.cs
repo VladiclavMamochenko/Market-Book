@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +21,16 @@ namespace Market_Book.Pages
     /// </summary>
     public partial class Market : Page
     {
+        private static readonly Model.DB _db = new Model.DB();
+        public ObservableCollection<Model.Market> Markets { get; set; } = new ObservableCollection<Model.Market>(_db.Market.ToList());
         public Market()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Menu());
         }
     }
 }

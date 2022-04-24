@@ -20,8 +20,9 @@
                 <DataGridTextColumn Header="Жанры" Binding="{Binding StringGenres}" Width="*"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Вернуться" HorizontalAlignment="Left" Margin="690,0,0,0" Grid.Row="1" VerticalAlignment="Center" Click="Button_Click" Height="50" Width="110"/>
+        <Button Content="Вернуться" HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Center" Click="Button_Click" Height="50" Width="140"/>
         <Button Content="Добавить книгу" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center" Height="50" Width="140" Click="Button_Click_1"/>
+        <Button Content="Корзина" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Height="50" Width="140" Click="Button_Click_2"/>
     </Grid>
 
 </Page>

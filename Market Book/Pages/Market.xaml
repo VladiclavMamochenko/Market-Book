@@ -6,14 +6,19 @@
       xmlns:local="clr-namespace:Market_Book.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Market">
+      Title="Market" Name="MarketPage">
 
     <Grid Background="Violet" DataContext="{Binding ElementName=MarketPage, Path=.}">
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
-
-
+        <DataGrid ItemsSource="{Binding Markets}" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Visible">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Название" Binding="{Binding Name}"  Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Адресс" Binding="{Binding Address }" Width="*"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Вернуться" HorizontalAlignment="Right"  Grid.Row="1" VerticalAlignment="Center" Height="60" Width="150" Click="Button_Click"  />
     </Grid>
 </Page>
