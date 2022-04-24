@@ -17,6 +17,8 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Название" Binding="{Binding Name}"  Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Header="Адресс" Binding="{Binding Address }" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Начало работы" Binding="{Binding StartTimeWork }" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Конец работы" Binding="{Binding EndTimeWork }" Width="*"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Вернуться" HorizontalAlignment="Right"  Grid.Row="1" VerticalAlignment="Center" Height="60" Width="150" Click="Button_Click"  />
