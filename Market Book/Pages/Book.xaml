@@ -16,8 +16,8 @@
         <DataGrid ItemsSource="{Binding Books}" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Visible">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Название книги" Binding="{Binding Name}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Название книги" Binding="{Binding AuthorBook.Author}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Название книги" Binding="{Binding StringGenres}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Автор" Binding="{Binding AuthorBook.Author}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Жанры" Binding="{Binding StringGenres}" Width="*"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Вернуться" HorizontalAlignment="Left" Margin="690,0,0,0" Grid.Row="1" VerticalAlignment="Center" Click="Button_Click" Height="50" Width="110"/>
