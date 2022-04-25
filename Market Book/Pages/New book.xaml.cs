@@ -23,7 +23,7 @@ namespace Market_Book.Pages
    
     public partial class New_book : Page
     {
-        public Model.Book Book { get; set; } = new Book() { };
+        public Model.Book Book { get; set; } = new Model.Book() { };
         public New_book()
         {
             InitializeComponent();
@@ -31,7 +31,18 @@ namespace Market_Book.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Book());
+            try
+            {
+                var db = new DB();
+                db.Book.Add(Book);
+                db.SaveChanges();
+                MessageBox.Show("Сохранено");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Данные введены не правильно", "Ошибка");
+            }
         }
     }
 }
