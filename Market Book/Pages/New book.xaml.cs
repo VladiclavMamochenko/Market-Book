@@ -25,6 +25,7 @@ namespace Market_Book.Pages
     {
         public Model.Book Book { get; set; } = new Model.Book() { };
         public New_book()
+         
         {
             InitializeComponent();
         }
