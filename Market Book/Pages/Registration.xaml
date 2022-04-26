@@ -41,5 +41,6 @@
         <Label Grid.Column="2" Content="Логин" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center"/>
         <Label Grid.Column="2" Content="Пароль" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center"/>
         <Label Grid.Column="2" Content="Адресс" HorizontalAlignment="Center" Grid.Row="7" VerticalAlignment="Center"/>
+        <Button Grid.Column="4" Content="Вернуться" HorizontalAlignment="Center"  Grid.Row="11" VerticalAlignment="Center" Width="163" Click="Button_Click_1"/>
     </Grid>
 </Page>

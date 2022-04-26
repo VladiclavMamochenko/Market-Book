@@ -44,5 +44,10 @@ namespace Market_Book.Pages
                 MessageBox.Show("Данные введены не правильно", "Ошибка");
             }
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
     }
 }
