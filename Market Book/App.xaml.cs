@@ -16,5 +16,8 @@ namespace Market_Book
     {
         public static User User { get; set; }
         public static Book Book { get; set; }
+        public static AuthorBook AuthorBook { get; set; }
+        public static Genre Genre{ get; set; }
     }
+
 }

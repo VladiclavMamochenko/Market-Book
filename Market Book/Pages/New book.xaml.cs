@@ -23,11 +23,17 @@ namespace Market_Book.Pages
    
     public partial class New_book : Page
     {
+        public DB Connection { get; set; } = new DB();
         public Model.Book Book { get; set; } = new Model.Book() { };
+        public AuthorBook Author { get; set; } = new AuthorBook() { };
+        public Genre Genre { get; set; } = new Genre() { };
+      
         public New_book()
          
         {
             InitializeComponent();
+            ComboboxAuthor.ItemsSource = Connection.AuthorBook.ToList();
+            ComboboxGenre.ItemsSource = Connection.Genre.ToList();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -36,6 +42,8 @@ namespace Market_Book.Pages
             {
                 var db = new DB();
                 db.Book.Add(Book);
+                db.AuthorBook.Add(Author);
+                db.Genre.Add(Genre);
                 db.SaveChanges();
                 MessageBox.Show("Сохранено");
             }
