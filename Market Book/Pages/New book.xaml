@@ -34,7 +34,7 @@
         <Button Grid.Column="4" Content="Вернуться" HorizontalAlignment="Center" Grid.Row="11" VerticalAlignment="Center" Click="Button_Click_1" Height="22" Width="162"/>
         <TextBox  Text="{Binding Book.Name}" Grid.Row="2" Grid.Column="2"  Width="100"></TextBox>
         <ComboBox SelectedItem="{Binding Author}" Grid.Row="4" Grid.Column="2" Width="100" Name="ComboboxAuthor" DisplayMemberPath="Author"></ComboBox>
-        <ComboBox SelectedItem="{Binding Genre}"  Grid.Row="6" Grid.Column="2" Width="100" Name="ComboboxGenre" DisplayMemberPath="Genre"></ComboBox>
+        <ComboBox SelectedItem="{Binding Genre}"  Grid.Row="6" Grid.Column="2" Width="100" Name="ComboboxGenre" DisplayMemberPath="Genre1"></ComboBox>
         <Button Click="Button_Click" Grid.Row="11" Grid.Column="2">Сохранить</Button>
         <Label Grid.Column="2" Content="Название" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center"/>
         <Label Grid.Column="2" Content="Автор" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center"/>
