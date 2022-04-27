@@ -40,14 +40,15 @@ namespace Market_Book.Pages
         {
             try
             {
-                var db = new DB();
-                db.Book.Add(Book);
-                db.AuthorBook.Add(Author);
-                db.Genre.Add(Genre);
-                db.SaveChanges();
+
+                Book.AuthorBook = Author;
+                Book.Genre = Genre;
+                Connection.Book.Add(Book);
+
+                Connection.SaveChanges();
                 MessageBox.Show("Сохранено");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
                 MessageBox.Show("Данные введены не правильно", "Ошибка");

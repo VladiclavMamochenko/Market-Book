@@ -114,13 +114,13 @@
     <Compile Include="Model\Book.cs" />
     <Compile Include="Model\DB.cs" />
     <Compile Include="Model\Genre.cs" />
-    <Compile Include="Model\GenreBook.cs" />
     <Compile Include="Model\Market.cs" />
     <Compile Include="Model\MarketBook.cs" />
     <Compile Include="Model\Partial\Book.cs" />
     <Compile Include="Model\Receipt.cs" />
     <Compile Include="Model\ReceiptBook.cs" />
     <Compile Include="Model\Role.cs" />
+    <Compile Include="Model\sysdiagrams.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Pages\Auth.xaml.cs">
       <DependentUpon>Auth.xaml</DependentUpon>

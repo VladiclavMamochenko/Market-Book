@@ -17,7 +17,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Название книги" Binding="{Binding Name}" Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Header="Автор" Binding="{Binding AuthorBook.Author}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Жанры" Binding="{Binding StringGenres}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Жанры" Binding="{Binding Genre.Genre1}" Width="*"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Вернуться" HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Center" Click="Button_Click" Height="50" Width="140"/>
