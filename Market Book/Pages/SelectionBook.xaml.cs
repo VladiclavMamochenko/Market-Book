@@ -16,22 +16,25 @@ using System.Windows.Shapes;
 namespace Market_Book.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Basket.xaml
+    /// Логика взаимодействия для SelectionBook.xaml
     /// </summary>
-    public partial class Basket : Page
+    public partial class SelectionBook : Page
     {
+        public Model.DB Connection { get; set; } = new Model.DB();
         public Model.Book Book { get; set; } = new Model.Book() { };
         public Model.Market Market { get; set; } = new Model.Market() { };
-        public Basket(Model.Book book, Model.Market market)
+ 
+
+        public SelectionBook()
         {
             InitializeComponent();
-            Book = book;
-            Market = market;
+            ComboboxBook.ItemsSource = Connection.Book.ToList();
+            ComboboxMarket.ItemsSource = Connection.Market.ToList();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void GoToTrash(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Menu());
+            NavigationService.Navigate(new Basket(Book, Market));
         }
     }
 }

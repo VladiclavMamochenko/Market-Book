@@ -48,7 +48,7 @@ namespace Market_Book.Pages
                 Connection.SaveChanges();
                 MessageBox.Show("Сохранено");
             }
-            catch (Exception ex)
+            catch 
             {
 
                 MessageBox.Show("Данные введены не правильно", "Ошибка");

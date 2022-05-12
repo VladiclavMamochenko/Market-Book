@@ -6,11 +6,20 @@
       xmlns:local="clr-namespace:Market_Book.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Basket">
+      Title="Basket" Name="BasketPage"
+      >
 
-    <Grid Background="LightGoldenrodYellow">
-        <Button Content="В меню" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Height="50" Width="140" Click="Button_Click"/>
-
-
+    <Grid Background="LightGoldenrodYellow" DataContext="{Binding ElementName=BasketPage, Path=.}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Content="В меню" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Height="50" Width="140" Click="Button_Click" Grid.Column="1" Margin="0,0,146,105" Grid.Row="1"/>
+        <Label Grid.Row="0" Content="{Binding Book.Name}" VerticalAlignment="Center" FontSize="40" Height="50" Grid.Column="0"/>
+        <Label Grid.Row="0" Content="{Binding Book.Name}" VerticalAlignment="Center" FontSize="20" Height="50" Grid.Column="0"/>
     </Grid>
 </Page>

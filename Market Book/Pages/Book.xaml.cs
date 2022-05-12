@@ -41,7 +41,12 @@ namespace Market_Book.Pages
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Basket());
+            
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new SelectionBook());
         }
     }
 }
