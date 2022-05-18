@@ -11,15 +11,17 @@
 
     <Grid Background="LightGoldenrodYellow" DataContext="{Binding ElementName=BasketPage, Path=.}">
         <Grid.RowDefinitions>
-            <RowDefinition/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button Content="В меню" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Height="50" Width="140" Click="Button_Click" Grid.Column="1" Margin="0,0,146,105" Grid.Row="1"/>
-        <Label Grid.Row="0" Content="{Binding Book.Name}" VerticalAlignment="Center" FontSize="40" Height="50" Grid.Column="0"/>
-        <Label Grid.Row="0" Content="{Binding Book.Name}" VerticalAlignment="Center" FontSize="20" Height="50" Grid.Column="0"/>
+        <Button Content="В меню" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="50" Width="140" Click="Button_Click" Grid.Column="0" Grid.Row="3" />
+        <Label Grid.Row="0" Content="{Binding Book.Name}" VerticalAlignment="Center" FontSize="25" Height="50" Grid.Column="0"/>
+        <Label Grid.Row="1" Content="{Binding Market.Name}" VerticalAlignment="Top" FontSize="20" Height="59" Grid.Column="0"/>
     </Grid>
 </Page>

@@ -24,9 +24,9 @@ namespace Market_Book.Pages
         public Model.Market Market { get; set; } = new Model.Market() { };
         public Basket(Model.Book book, Model.Market market)
         {
-            InitializeComponent();
             Book = book;
             Market = market;
+            InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
