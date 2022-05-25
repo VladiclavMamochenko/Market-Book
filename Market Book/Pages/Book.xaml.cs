@@ -23,6 +23,7 @@ namespace Market_Book.Pages
     {
         private static readonly Model.DB _db = new Model.DB();
         public ObservableCollection<Model.Book> Books { get; set; } = new ObservableCollection<Model.Book>(_db.Book.ToList());
+ 
         public Book()
         {
             InitializeComponent();

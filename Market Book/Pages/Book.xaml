@@ -22,8 +22,7 @@
         </DataGrid>
         <Button Content="Вернуться" HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Center" Click="Button_Click" Height="50" Width="140"/>
         <Button Content="Добавить книгу" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center" Height="50" Width="140" Click="Button_Click_1"/>
-        <Button Content="Корзина" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Height="50" Width="140" Click="Button_Click_2" Margin="418,0,242,0"/>
-        <Button Content="Выбрать книгу" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Height="50" Width="140" Click="Button_Click_3" Margin="208,0,452,0"/>
+        <Button Content="Выбрать книгу" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center" Height="50" Width="140" Click="Button_Click_3" Margin="319,0,0,0"/>
     </Grid>
 
 </Page>
